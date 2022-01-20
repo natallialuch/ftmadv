@@ -7,4 +7,3 @@ Scenario: Verify page title
 Then the page title is equal to 'Vividus Test Site'
 
 
-|natallia_luchynovich@epam.com|natallia|

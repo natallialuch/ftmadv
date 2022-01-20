@@ -1,0 +1,6 @@
+Composite: When I create a board
+When I click on element located `By.xpath(//li[@data-test-id="create-board-tile"])`
+When I click on element located `By.xpath(//*[@title="Green"])`
+When I initialize the STORY variable `BoardTitle` with value `#{generate(regexify'[A-Z]{1}[a-z]{4}')}`
+When I enter `${BoardTitle}` in field located `By.xpath(//*[@data-test-id="create-board-title-input"])`
+
