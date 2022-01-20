@@ -8,13 +8,11 @@ When I click on an element by the xpath '//*[@id="signup-submit"]'
 When I wait until element located `By.xpath(//*[@id="displayName"])` appears
 When I enter `<fullname>` in field located `By.xpath(//*[@id="displayName"])`
 When I click on an element by the xpath '//*[@id="signup-submit"]'
-When I wait until element located `By.xpath(//*[@id="content"])` appears
-Then the text 'Let’s set up your Workspace' exists
-
+Then an element by the xpath '/html/body/div[3]/div[2]/iframe' exists
 Examples:
-|email                    |fullname|
-|cvbnm@gmail.com          |ABC     |
-|testusertrello1@yandex.by|TestUser|
+|email                      |fullname|
+|asdad123098@gmail.com      |ABC123  |
+|testusertrello090@yandex.by|TestUser|
 
 
 
