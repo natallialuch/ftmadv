@@ -12,9 +12,9 @@ When I wait until element located `By.xpath(//*[@id="content"])` appears
 Then the text 'Let’s set up your Workspace' exists
 
 Examples:
-|email                   |fullname|
-|natalieluch@gmail.com   |natalie |
-|testusertrello@yandex.by|TestUser|
+|email                    |fullname|
+|cvbnm@gmail.com          |ABC     |
+|testusertrello1@yandex.by|TestUser|
 
 
 

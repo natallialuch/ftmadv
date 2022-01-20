@@ -10,8 +10,8 @@ When I click on an element by the xpath '//*[@id="signup-submit"]'
 When I wait until element located `By.xpath(//*[@id="displayName"])` appears
 When I enter `${TestuserName}` in field located `By.xpath(//*[@id="displayName"])`
 When I click on an element by the xpath '//*[@id="signup-submit"]'
-Then an element by the xpath '/html/body/div[3]/div[2]/iframe' exists
-
+When I wait until element located `By.xpath(//*[@id="content"])` appears
+Then the text 'Let’s set up your Workspace' exists
 
 
 

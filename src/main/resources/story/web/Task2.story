@@ -1,4 +1,4 @@
-Description: Vividus - task 2
+Description: Vividus - task 2 with task 3 (composite step)
 
 Scenario: Sign in
 Given I am on the main application page
@@ -18,7 +18,7 @@ When I click on element located `By.xpath(//a[contains(@href,"profile")])`
 Then the text 'Manage your personal information' exists
 
 
-Scenario: Navigation to 5 pages and visual check
+Scenario: Navigation to 5 pages and visual check and composite step (task 3)
 When I establish baseline with `profile`
 When I click on element located `By.xpath(//a[@data-tab="activity"])`
 Then the text 'Load more activity' exists
@@ -29,6 +29,8 @@ When I click on element located `By.xpath(//a[@data-tab="profile"])`
 When I compare against baseline with `profile`
 When I click on element located `By.xpath(//*[@aria-label="Back to home"])`
 When I create a board
+When I initialize the STORY variable `BoardTitle` with value `#{toLowerCase(${BoardTitle})}`
+Then the page with the URL containing '${BoardTitle}' is loaded
 
 
 
